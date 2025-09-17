@@ -1,28 +1,28 @@
 {
-  "name": "dungeon-revealer",
-  "version": "1.17.1",
-  "description": "dungeon-revealer ================",
+  "name": "tales-of-legends",
+  "version": "0.1.0",
+  "description": "Tales of Legends - Virtual Tabletop",
   "bugs": {
-    "url": "https://github.com/dungeon-revealer/dungeon-revealer/issues"
+    "url": "https://github.com/christianivanaj/tales-of-legends-ttrpg/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dungeon-revealer/dungeon-revealer.git"
+    "url": "https://github.com/christianivanaj/tales-of-legends-ttrpg.git"
   },
   "license": "ISC",
   "author": "apclary",
   "main": "app.js",
-  "bin": "bin/dungeon-revealer",
+  "bin": "bin/tales-of-legends",
   "scripts": {
     "prebuild": "node scripts/prebuild.js",
     "build:frontend": "node scripts/copy-monaco-editor-files.js && npm run relay-compiler && vite build --base=./",
     "build:backend": "tsc --project server/tsconfig.json",
     "build": "npm run build:frontend && npm run build:backend",
-    "compile": "npx caxa -i . --exclude '*' '.*' '!server-build' '!build' '!package.json' '!package-lock.json' '!node_modules' -o bin/dungeon-revealer-bin -- \"{{caxa}}/node_modules/.bin/node\" \"{{caxa}}/server-build/index.js\" \"--caxa\"",
-    "compile:win": "npx caxa -i . --exclude '*' '.*' '!server-build' '!build' '!package.json' '!package-lock.json' '!node_modules' -o bin/dungeon-revealer-bin.exe -- \"{{caxa}}/node_modules/.bin/node\" \"{{caxa}}/server-build/index.js\" \"--caxa\"",
-    "eslint": "eslint --ignore-path .gitignore --max-warnings 0 \"**/*.js\" \"bin/dungeon-revealer\"",
+    "compile": "npx caxa -i . --exclude '*' '.*' '!server-build' '!build' '!package.json' '!package-lock.json' '!node_modules' -o bin/tales-of-legends-bin -- \"{{caxa}}/node_modules/.bin/node\" \"{{caxa}}/server-build/index.js\" \"--caxa\"",
+    "compile:win": "npx caxa -i . --exclude '*' '.*' '!server-build' '!build' '!package.json' '!package-lock.json' '!node_modules' -o bin/tales-of-legends-bin.exe -- \"{{caxa}}/node_modules/.bin/node\" \"{{caxa}}/server-build/index.js\" \"--caxa\"",
+    "eslint": "eslint --ignore-path .gitignore --max-warnings 0 \"**/*.js\" \"bin/tales-of-legends\"",
     "postinstall": "patch-package",
-    "start": "node ./bin/dungeon-revealer",
+    "start": "node ./bin/tales-of-legends",
     "test": "jest --passWithNoTests",
     "start:frontend:dev": "vite",
     "start:server:dev": "ts-node-dev --project server/tsconfig.json --no-deps server/index.ts",

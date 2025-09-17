@@ -242,8 +242,8 @@ export const AuthenticatedAppShell: React.FC<{
     React.useState<ConnectionMode>("connecting");
 
   /**
-   * We only use one tab at a time. The others will be disconnected automatically upon opening dungeon-revealer in another tab.
-   * You can still use dungeon-revealer in two tabs by using the incognito mode of the browser.
+   * We only use one tab at a time. The others will be disconnected automatically upon opening tales-of-legends in another tab.
+   * You can still use tales-of-legends in two tabs by using the incognito mode of the browser.
    * We do this in order to prevent message/user connect/music sound effect spamming.
    */
   React.useEffect(() => {

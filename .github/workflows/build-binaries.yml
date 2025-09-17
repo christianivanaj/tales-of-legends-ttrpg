@@ -20,13 +20,13 @@ jobs:
         include:
           - os: linux
             runner: ubuntu-latest
-            output: dungeon-revealer-linux-x64
+            output: tales-of-legends-linux-x64
           - os: macos
             runner: macos-latest
-            output: dungeon-revealer-macos-x64
+            output: tales-of-legends-macos-x64
           - os: windows
             runner: windows-latest
-            output: dungeon-revealer-windows.exe
+            output: tales-of-legends-windows.exe
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -67,11 +67,11 @@ jobs:
           - arch: armv7
             docker_platform: linux/arm/v7
             docker_image: arm32v7/node:16
-            output: dungeon-revealer-linux-armv7
+            output: tales-of-legends-linux-armv7
           - arch: arm64
             docker_platform: linux/arm64/v8
             docker_image: arm64v8/node:16
-            output: dungeon-revealer-linux-arm64
+            output: tales-of-legends-linux-arm64
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -135,7 +135,7 @@ jobs:
       - name: File Checksums
         run: |
           cd bin
-          rm -rf dungeon-revealer || true                         # remove unnecessary script
+          rm -rf tales-of-legends || true                         # remove unnecessary script
           find . -type f -exec mv {} ./ \;                        # move files from subdirectories to top directory
           find . -type d -not -path "." -exec rmdir {} +          # remove empty subdirectories
           find . -type f -not -path "*.exe" -exec chmod +x {} +   # make linux & macos files executable
@@ -152,7 +152,7 @@ jobs:
       - name: Upload Zip Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: dungeon-revealer-zips-${{ env.version_string }}
+          name: tales-of-legends-zips-${{ env.version_string }}
           path: "bin/*.zip"
 
       - name: Release

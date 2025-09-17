@@ -1,6 +1,6 @@
 # Contributing
 
-This document will help you setting up this project on your machine for development. If you just want to use dungeon-revealer we recommend using the docker images or prebuilt binaries. [See the release section for more information](https://github.com/dungeon-revealer/dungeon-revealer/releases).
+This document will help you setting up this project on your machine for development. If you just want to use dungeon-revealer we recommend using the docker images or prebuilt binaries. [See the release section for more information](https://github.com/christianivanaj/legends-web-app/releases).
 
 ## Required Software
 

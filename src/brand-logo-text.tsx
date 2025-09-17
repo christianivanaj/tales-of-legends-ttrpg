@@ -9,4 +9,4 @@ const Heading = styled.div`
   color: white;
 `;
 
-export const BrandLogoText = () => <Heading>Dungeon Revealer</Heading>;
+export const BrandLogoText = () => <Heading>Tales of Legends</Heading>;

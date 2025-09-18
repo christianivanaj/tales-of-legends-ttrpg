@@ -1,130 +1,89 @@
-# dungeon-revealer
+# Tales of Legends
 
-[![Build Status](https://img.shields.io/github/workflow/status/dungeon-revealer/dungeon-revealer/Node.js%20CI)](https://github.com/dungeon-revealer/dungeon-revealer/actions)
-[![Downloads](https://img.shields.io/github/downloads/dungeon-revealer/dungeon-revealer/total.svg?logo=github)](https://github.com/dungeon-revealer/dungeon-revealer/releases)
-[![Release](https://img.shields.io/github/v/release/dungeon-revealer/dungeon-revealer?logo=github&color=orange)](https://github.com/dungeon-revealer/dungeon-revealer/releases/latest)
-[![Docker](https://img.shields.io/static/v1?label=docker&message=v1.17.1&color=blue&logo=Docker)](https://github.com/dungeon-revealer/dungeon-revealer/pkgs/container/dungeon-revealer/versions)
-[![Discord](https://img.shields.io/discord/709687178422386708)](https://discord.gg/dS5khqk)
+Welcome to Tales of Legends! This is a React Native app built using the Expo framework. The app provides a comprehensive list of sourcebooks, character creations, Dungeon Master tools, etc. featuring essential references for players, dungeon masters, and more!
 
-Dungeon Revealer is an open source self-hosted app for playing pen and paper such as Dungeon and Dragons or Cyberpunk or other tabletop games together.
+## Table of Contents
 
-The main features include revealing game maps to players, moving around tokens on a map, a dice roll chat and sharing notes and images.
+- [Usage](#usage)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [License](#license)
 
-Dungeon Revealer supports both desktop clients and mobile clients, such as tablets or phones. It can be used for in person gaming on a local network or for online gaming via the internet.
+## Installation
 
-Join the [discord server](https://discord.gg/dS5khqk).
-Check out the [wiki](https://github.com/dungeon-revealer/dungeon-revealer/wiki) for a detailed walkthrough!
+To get started with this project, follow these steps:
 
-## What the DM Sees
+1. Clone the repository:
+    ```
+    git clone https://github.com/christianivanaj/legends.git
+    ```
 
-![alt text](https://user-images.githubusercontent.com/14338007/83942937-68312280-a7f8-11ea-9a63-8307f1c12d50.png "DM's View")
+2. Install the dependencies:
+    ```
+    npm install --legacy-peer-deps
+    ```
 
-You can protect the DM area by setting a password.
+3. Start the Expo development server:
+    ```
+    npm run start
+    ```
 
-## What the players see
+## Usage
 
-![alt text](https://user-images.githubusercontent.com/14338007/83942940-6e270380-a7f8-11ea-9eb5-ec440ea57c83.png "Player's view")
+Once the development server is running, you can view the site on your device using a browser.
 
-## Getting Started
+This app is a product for Legends of the Lake's table-top RPG, *Tales of Legends*.
 
-### Getting the app
+## Features/Roadmap
 
-The easiest way to use dungeon-revealer is to download the app from the [releases](https://github.com/dungeon-revealer/dungeon-revealer/releases) page here on github. There is also a [docker image](https://ghcr.io/dungeon-revealer/dungeon-revealer) that is kept up to date with the releases in this repository.
+- Display the Legends of the Coast sourcebooks [In Progress]
+- Allow users to create a character with a character sheet [In Progress]
+- Tools for Dungeon Masters to create and manage their games with ease [In Progress]
+- Ability to play the game virtually, online! [In Progress]
+    - Fully customizable and interactive virtual game board with visable 
+    - Seemlessly online gaming
+    - Tools for Dungeon Masters allowing them to create and integrate custom items, characters, assets, etc. [Backlog]
+- Responsive design that works on both iOS and Android devices
+- All being completely available online for users! [In Progress]
 
-#### Prebuilt app
+## Screenshots
 
-**Download the app for your system from the [releases page](https://github.com/dungeon-revealer/dungeon-revealer/releases).**
-We provide builds for Windows, Linux, and OSX.
+<!-- ![Home Screen](path/to/screenshot1.png) -->
+***Soon.***
 
-Running from the command prompt will present connection information and some debugging.
-Optionally, you may set a password for the dungeon master and/or players by setting the environmental variables `DM_PASSWORD` and `PC_PASSWORD` when starting the app. e.g. for linux `PC_PASSWORD='password1' DM_PASSWORD='password2' ./dungeon-revealer-linux`
-Leaving a variable undefined will disable authentication and allow public access for that section of the map.
+## License
 
-##### Linux
+This project is licensed under the Proprietary License. By accessing or using this software, you agree to the following terms and conditions:
 
-Open the zip file and extract the files to your preferred location.
+1. License Grant
 
-Then you can run the app directly in the terminal.
+The author grants you a non-exclusive, non-transferable, revocable license to use the software solely for personal evaluation purposes. This license does not permit personal or professional use beyond evaluation, distribution, modification, or reverse engineering of the software.
 
-```
-./dungeon-revealer-linux
-```
+2. Restrictions
 
-Then go to `localhost:3000` in your browser and point your players to `<YOUR_IPADDRESS>:3000`.
-This information is also present in the terminal window.
+You may not:
 
-There is also a community maintained [AUR package](https://aur.archlinux.org/packages/dungeon-revealer-bin/).
+    Use the software for any personal, commercial, or professional purpose.
+    Distribute, sublicense, lease, rent, or otherwise transfer the software or any portion thereof.
+    Modify, adapt, translate, or create derivative works based on the software.
+    Decompile, disassemble, reverse engineer, or attempt to derive the source code of the software.
 
-##### OSX
+3. Termination
 
-Open the zip file and extract the files to your preferred location.
+This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any term(s) of this license. Upon termination, you shall cease all use of the software and destroy all copies, full or partial, of the software.
 
-Double click the app. A terminal will open with useful information.
-Then go to `localhost:3000` in your browser and point your players to `<YOUR_IPADDRESS>:3000`.
-This information is also present in the terminal window.
+4. Ownership
 
-##### Windows
+All rights, title, and interest in and to the software, including but not limited to any images, photographs, animations, video, audio, music, text, and "applets" incorporated into the software, are owned by the author or its suppliers.
 
-Double click the app. A command prompt will open with useful information.
-Then go to `localhost:3000` in your browser and point your players to `<YOUR_IPADDRESS>:3000`.
-This information is also present in the command prompt window.
+5. Disclaimer of Warranties
 
-##### Docker
+The software is provided "as is" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the author be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 
-We provide docker images for x64 and arm architectures.
-An up to date version of docker is required to make sure the correct image architecture is pulled for your host machine.
-To create an instance, run the following:
+6. Limitation of Liability
 
-```
-docker pull ghcr.io/dungeon-revealer/dungeon-revealer:v1.17.1
-docker run -e DM_PASSWORD=<password> -e PC_PASSWORD=<password> -p <PORT>:3000 -v <DATA_DIR>:/usr/src/app/data -d ghcr.io/dungeon-revealer/dungeon-revealer:latest
-```
+In no event shall the author be liable for any special, incidental, indirect, or consequential damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use the software, even if the author has been advised of the possibility of such damages.
 
-- Replace `<password>` with your chosen passwords.
-- Replace `<PORT>` with your preferred port.
-- `<DATA_DIR>` is the directory on the host filesystem in which you want to store the maps and settings. `<DATA_DIR>` **must be an absolute path.** One way to achieve this in linux is to navigate to the directory you want in the terminal and then use `$PWD/data` as `<DATA_DIR>`.
+7. Governing Law
 
-In your browser, go to `<YOUR_IPADDRESS>:<PORT>/dm`. If your players are on the local network, have them go to `<YOUR_IPADDRESS>:<PORT>`.
-
-##### Heroku
-
-Heroku is a platform supporting one-click deployments and includes a free usage tier. Sign up for a free account then click the button below. Give your app a unique name, set any required passwords, and click `Deploy App` to start the build process.
-
-> **Note:** the Heroku deployment will not preserve user data over time (see [#405](https://github.com/dungeon-revealer/dungeon-revealer/issues/405)).
-
-[![button](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dungeon-revealer/dungeon-revealer/tree/v1.17.1)
-
-### Using the app
-
-The app is separated into two sections. One for the dungeon master and one for the players. Check out the [wiki](https://github.com/dungeon-revealer/dungeon-revealer/wiki) for a detailed walkthrough!
-
-#### Dungeon Master
-
-To use dungeon-revealer, the game master and the players must be on the same local network (usually a wifi network). The game master will start the server (see Installation), navigate to the server's URL in a web browser, click on the Dungeon Master link, and then enter a password if it is set. At this point, they will be prompted to upload an image file of the map to share with the other players. The other players will navigate to the server using their own browsers (laptop, tablet, or phone) and will remain at the home page. The connection information is displayed in command prompt for convenience.
-
-To clear areas of the map, click and draw on the map. You can switch the brush mode by clicking the "Reveal" or "Shroud" button. Alternatively, you can select an area to clear or shroud by clicking the "Select Area" button. Whenever the game master clears some of the fog of war from the map and it is ready to share with the players, they will click "Send" and the revealed areas of the map will appear in the players' browsers. What appears as a shadow to the DM will appear as pure blackness to players, thus only revealing the cleared sections of the map to them. The "Mark" button will display a circle for a period of time to indicate a point of interest.
-
-To switch to a different map, click "Map Library", and then select one of the maps you have already uploaded and click "Load". The "LIVE" indicator in the lower right indicates if the map currently on the dungeon master page is being presented on the player page. the "Stop Sharing" button will blank the player page in preparation for a new map to be loaded.
-
-You can add token with the "Token" tool. Click anywhere on the map to place it. The token can be changed by opening the context menu trough right-clicking on a single token. You can alter it's label, color and size.
-
-##### Shortcuts
-
-| Key            | Functionality                                                                                 |
-| -------------- | --------------------------------------------------------------------------------------------- |
-| `1`            | select move tool.                                                                             |
-| `2`            | select area tool.                                                                             |
-| `3`            | select brush tool.                                                                            |
-| `4`            | select mark tool.                                                                             |
-| `5`            | select token tool.                                                                            |
-| `Shift`        | toggle between hide/reveal.                                                                   |
-| `CMD/Ctrl + S` | push map to players.                                                                          |
-| Hold `Alt`     | use move tool while `Alt` key is pressed and return to previous mode after `Alt` is released. |
-
-#### Players
-
-Navigate to the server using a web browser and wait at the home page. (The connection information is displayed in command prompt for convenience.) When the dungeon master is ready, they will push a map to your webpage. You will see either a black screen or a partially covered image. You can zoom in/out and pan the map. On a long click you will place a "point of interest" on the map that will show as a red circle.
-
-## Contributing
-
-See the [CONTRIBUTING.md](CONTRIBUTING.md).
+This license shall be governed by and construed in accordance with the laws of the jurisdiction in which the author resides, without regard to its conflict of laws rules.

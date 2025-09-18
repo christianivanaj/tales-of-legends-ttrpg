@@ -1,6 +1,6 @@
 # Tales of Legends
 
-Welcome to Tales of Legends! This is a React Native app built using the Expo framework. The app provides a comprehensive list of sourcebooks, character creations, Dungeon Master tools, etc. featuring essential references for players, dungeon masters, and more!
+Welcome to Tales of Legends! The app will provides a comprehensive list of sourcebooks, character creations, Dungeon Master tools, etc. featuring essential references for players, dungeon masters, and more!
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
     ```
-    git clone https://github.com/christianivanaj/legends.git
+    git clone https://github.com/christianivanaj/tales-of-legends-ttrpg.git
     ```
 
 2. Install the dependencies:
